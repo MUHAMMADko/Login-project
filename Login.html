@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project of login page</title>
+    <style>
+        body{
+            background-color: khaki;
+        }
+        .container{
+            height: 300px;
+            width: 500px;
+            background-color: rgb(85, 241, 234);
+            display: block;
+            margin: auto;
+            border: 2px solid black;
+            padding: 30px 40px;
+        }
+        #but{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 id="heading"> LOGIN HERE !</h1></center>
+    <hr>
+    <div class="container">
+        <form>
+            Username or Email address :<br>
+             <input type="text" name="text" placeholder="username" id="username">
+             <br><br>
+            Password : <br>
+            <input type="password" name="text" placeholder="password" id="password">
+            <br><br>
+            <button id="but" onClick="Login()">Submit</button>
+        </form>
+    </div>
+    <script>
+        function Login(){
+            var Uname=document.getElementById('username').value;
+            var pass=document.getElementById('password').value;
+            if(Uname=="Muhammad" && pass=="Mumbai"){
+                alert("login successfully");
+            }else{
+                alert("login failed");
+            }
+        }
+</script>
+</body>
+</html>
